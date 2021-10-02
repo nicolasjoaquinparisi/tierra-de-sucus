@@ -1,15 +1,19 @@
 $(document).ready(function(){
 
     $('#container-images0').waypoint(function() {
-
+        
         $('#img0').addClass('animation-fadeInLeft');
         $('#img0').css('opacity', 1);
 
-        $('#img1').addClass('animation-fadein');
-        $('#img1').css('opacity', 1);
+        setTimeout(function () {
+            $('#img1').addClass('animation-fadein');
+            $('#img1').css('opacity', 1);
+        }, 1000);
 
-        $('#img2').addClass('animation-fadeInRight');
-        $('#img2').css('opacity', 1);
+        setTimeout(function () {
+            $('#img2').addClass('animation-fadeInRight');
+            $('#img2').css('opacity', 1);
+        }, 2000);
 
     }, { offset: '50%' });
 
@@ -27,3 +31,14 @@ $(document).ready(function(){
     }, { offset: '50%' });
 
 });
+
+$('a[href*="#"]').on('click',function(e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+     'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+     window.location.hash = target;
+    });
+   });
