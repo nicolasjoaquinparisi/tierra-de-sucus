@@ -1,25 +1,28 @@
 $(document).ready(function(){
 
-    let leftImages   = ['#img0', '#img3'];
-    let middleImages = ['#img1', '#img4'];
-    let rightImages  = ['#img2', '#img5'];
+    $('#container-images0').waypoint(function() {
 
-    $('#container-images').waypoint(function() {
+        $('#img0').addClass('animation-fadeInLeft');
+        $('#img0').css('opacity', 1);
 
-        leftImages.forEach(img => {
-            $(img).addClass('animation-fadeInLeft');
-            $(img).css('opacity', 1);
-        });
+        $('#img1').addClass('animation-fadein');
+        $('#img1').css('opacity', 1);
 
-        middleImages.forEach(img => {
-            $(img).addClass('animation-fadein');
-            $(img).css('opacity', 1);
-        });
+        $('#img2').addClass('animation-fadeInRight');
+        $('#img2').css('opacity', 1);
 
-        rightImages.forEach(img => {
-            $(img).addClass('animation-fadeInRight');
-            $(img).css('opacity', 1);
-        })
+    }, { offset: '50%' });
+
+    $('#container-images1').waypoint(function() {
+
+        $('#img3').addClass('animation-fadeInLeft');
+        $('#img3').css('opacity', 1);
+
+        $('#img4').addClass('animation-fadein');
+        $('#img4').css('opacity', 1);
+
+        $('#img5').addClass('animation-fadeInRight');
+        $('#img5').css('opacity', 1);
 
     }, { offset: '50%' });
 
