@@ -36,6 +36,9 @@ $('a[href*="#"]').on('click',function(e) {
     e.preventDefault();
     var target = this.hash;
     var $target = $(target);
+
+    // let id = e.target.hash;
+
     $('html, body').stop().animate({
      'scrollTop': $target.offset().top
     }, 900, 'swing', function () {

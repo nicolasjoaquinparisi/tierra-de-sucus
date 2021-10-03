@@ -156,7 +156,7 @@ h2:after {
 }
 
 /* Animation on load */
-#main {
+#hero {
   animation: fadein 2s;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
@@ -302,3 +302,34 @@ h2:after {
     -o-animation: fadeInRight 1.5s; /* Opera */
 }
 
+/* Sobre Nosotros */
+@media (min-width: 768px) {
+  .container-about-us {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 5fr);
+    margin-top: 3rem;
+  }
+}
+
+.img-about-us {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .img-about-us {
+    width: 85%;
+  }
+}
+
+
+.about-us-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.align-items-end {
+  display: flex;
+  justify-content: end;
+}
