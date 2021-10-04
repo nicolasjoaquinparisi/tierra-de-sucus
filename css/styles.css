@@ -333,3 +333,67 @@ h2:after {
   display: flex;
   justify-content: end;
 }
+
+/* Contacto */
+.container-contact {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.img-contact {
+  width: 80%;
+}
+
+.d-flex {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 2rem;
+  margin-bottom: 10rem;
+}
+
+.input {
+  background-color: #dbdbdb;
+  font-size: 20px;
+  position: absolute;
+}
+
+.input-email {
+  padding: 1rem;
+  padding-right: 7.2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  
+  margin-bottom: 25rem;
+}
+
+.text-area {
+  margin-top: 15rem;
+  resize: none;
+  height: 30rem;
+  width: 28rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.button-contact {
+  position: absolute;
+  
+  margin-top: 52.5rem;
+  padding: 1rem 3rem;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6a9a4b;
+  color: #FFF;
+  transition: background-color .3s ease;
+}
+.button-contact:hover {
+  background-color: #466324;
+  cursor: pointer;
+}
