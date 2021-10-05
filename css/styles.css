@@ -372,6 +372,7 @@ h2:after {
     flex-direction: row;
     justify-content: center;
 
+    width: 27%;
     margin-left: 2rem;
     margin-bottom: 10rem;
   }
@@ -405,13 +406,12 @@ h2:after {
 @media (min-width: 768px) {
   .input-email {
     padding: 1rem;
-    padding-right: 7.2rem;
+    width: 100%;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     
-    margin-bottom: 25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 35rem;
   }
 }
 
@@ -448,10 +448,8 @@ h2:after {
 @media (min-width: 768px) {
   .button-contact {
     position: absolute;
-    
-    width: auto;
-    margin-top: 63.5rem;
-    padding: 1rem 3rem;
+    width: 105%;
+    margin-top: 205%;
     font-size: 15px;
   }
 }
