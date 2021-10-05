@@ -336,55 +336,104 @@ h2:after {
 
 /* Contacto */
 .container-contact {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
+  display: block;
+}
+@media (min-width: 768px) {
+  .container-contact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
 }
 
 .img-contact {
-  width: 80%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .img-contact {
+    width: 100%;
+    display: block;
+  }
 }
 
 .d-flex {
-  position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+}
+@media (min-width: 768px) {
+  .d-flex {
+    position: absolute;
 
-  margin-left: 2rem;
-  margin-bottom: 10rem;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-left: 2rem;
+    margin-bottom: 10rem;
+  }
 }
 
 .input {
   background-color: #dbdbdb;
   font-size: 20px;
-  position: absolute;
+  font-size: 18px;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .input {
+    position: absolute;
+    font-size: 18px;
+    padding: 1rem;
+    margin: 0;
+    width: 95%;
+  }
 }
 
 .input-email {
   padding: 1rem;
-  padding-right: 7.2rem;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   
   margin-bottom: 25rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .input-email {
+    padding: 1rem;
+    padding-right: 7.2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+    margin-bottom: 25rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .text-area {
-  margin-top: 15rem;
   resize: none;
-  height: 30rem;
-  width: 28rem;
   border-radius: 10px;
   padding: 1rem;
 }
+@media (min-width: 768px) {
+  .text-area {
+    margin-top: 15rem;
+    resize: none;
+    height: 40rem;
+    width: 28rem;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-right: 5.5rem;
+  }
+}
 
 .button-contact {
-  position: absolute;
-  
-  margin-top: 52.5rem;
+  width: 100%;
   padding: 1rem 3rem;
   font-size: 15px;
   border: none;
@@ -392,8 +441,42 @@ h2:after {
   background-color: #6a9a4b;
   color: #FFF;
   transition: background-color .3s ease;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  
+}
+@media (min-width: 768px) {
+  .button-contact {
+    position: absolute;
+    
+    width: auto;
+    margin-top: 63.5rem;
+    padding: 1rem 3rem;
+    font-size: 15px;
+  }
 }
 .button-contact:hover {
   background-color: #466324;
   cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #dfe9f3;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.footer p {
+  font-size: 14px;
+  color: #666;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .footer {
+    text-align: start;
+  }
 }
