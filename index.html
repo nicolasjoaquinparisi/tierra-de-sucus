@@ -11,10 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
@@ -26,7 +25,7 @@
     <header id="hero" class="section hero">
         <div class="hero-content">
             <div class="container">
-                <h1>Tierra de Sucus</h1>
+                <h1 class="title main-title">Tierra de Sucus</h1>
             </div>
             
             <nav class="main-nav">
@@ -40,7 +39,7 @@
     </header>
     
     <main id="gallery" class="container">
-        <h2 class="text-center">Galería</h2>
+        <h2 class="title text-center">Galería</h2>
 
         <div id="container-images0" class="container-images">
             <img id="img0" class="img" src="img/0.png"/>
@@ -56,7 +55,7 @@
     </main>
 
     <section id="about-us" class="container about-us-text">
-        <h2 class="text-center">Sobre Nosotros</h2>
+        <h2 class="title text-center">Sobre Nosotros</h2>
 
         <div class="container-about-us">
             <img class="img-about-us" src="img/about-us-0.png">
@@ -124,21 +123,21 @@
     </section>
 
     <section id="location" class="container">
-        <h2 class="text-center">¿Dónde estamos?</h2>
+        <h2 class="title text-center">¿Dónde estamos?</h2>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26178.073098892703!2d-57.99811949019383!3d-34.8999458471634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7a00ca9dba3%3A0x1963c8cbd726acb0!2sTolosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633283521229!5m2!1ses-419!2sar" 
         width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section id="contact" class="container">
-        <h2 class="text-center">Contacto</h2>
+        <h2 class="title text-center">Contacto</h2>
 
         <div class="container-contact">
             <img class="img-contact" src="img/contact-us.jpg">
             <div class="d-flex">
-                <input type="text" class="input input-email" placeholder="Ingrese aquí su email"/>
-                <textarea class="input text-area" placeholder="Ingrese aquí su mensaje"></textarea>
-                <button class="button-contact">Enviar</button>
+                <input id="email" type="text" class="input input-email" placeholder="Ingrese aquí su email"/>
+                <textarea id="content" class="input text-area" placeholder="Ingrese aquí su mensaje"></textarea>
+                <button id="send-mail-button" class="button-contact">Enviar</button>
             </div>
         </div>
     </section>
