@@ -11,7 +11,7 @@ html {
 
 body {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .section {
@@ -31,7 +31,7 @@ body {
 
 .title {
   font-family: 'Amatic SC', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 @media (min-width: 768px) {
   .title {
@@ -55,7 +55,7 @@ body {
 }
 @media (min-width: 768px) {
   .hero {
-    height: 25vh;
+    height: 24vh;
   }  
 }
 
@@ -79,14 +79,14 @@ body {
   color: white;
   font-size: 7rem;
   font-weight: 300;
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   margin: 0;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 @media (min-width: 768px) {
   .hero-content h1 {
-    font-size: 12rem;
+    font-size: 11rem;
   }
 }
 
